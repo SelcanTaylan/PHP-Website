@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  position: relative;
+  z-index: 9999;
+}
+
+
+html, body {
+  height: 100%;
+  background: url('img/6.jpg') no-repeat center center;
+  background-size: cover;
+  overflow-x: visible;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background-color: rgba(255, 86, 34, 0.45);
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.label-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.label-row .icon,
+.label-row label {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.login-box .input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 137, 34, 0.45);
+  color: #ffffff;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 137, 34, 0.65);
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 86, 34, 0.7);
+}
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background-color: rgba(255, 86, 34, 0.45);
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  z-index: 20;
+}
+
+.remember-forgot {
+  font-size: 13px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
